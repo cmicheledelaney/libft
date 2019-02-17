@@ -43,6 +43,7 @@ LIBFT =	ft_memset.c \
 		ft_strncat.c \
 		ft_strlcat.c \
 		ft_strrchr.c \
+		ft_strchr_index.c \
 		ft_strstr.c \
 		ft_strstr_index.c \
 		ft_strnstr.c \
@@ -83,17 +84,17 @@ LIBFT =	ft_memset.c \
 		ft_lstadd.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
-		conversions_poux.c \
-		conversions_scdif.c
+		ft_strsplit_whitespace.c
 
 FT_PRINTF =	printing.c \
 			diverse.c \
+			conversions_scdif.c \
+			conversions_poux.c \
 			casting.c \
 			helper.c \
 			floats.c \
 			casting.c \
 			ft_printf.c \
-			ft_strsplit_whitespace.c
 
 CFLAGS = -Wall -Wextra -Werror
 
