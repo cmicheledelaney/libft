@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** writes a string and a newline to a given filedescriptor.
+*/
+
 void	ft_putendl_fd(char const *s, int fd)
 {
 	int i;

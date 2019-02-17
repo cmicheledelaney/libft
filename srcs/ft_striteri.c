@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** applies the function that takes an unsigned int and a char pointer as
+** arguments on each byte of memory pointed to by s.
+*/
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	long i;
