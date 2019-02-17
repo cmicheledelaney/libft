@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** copies s2 to s1. be sure to allocate enough memory for s1!
+*/
+
 char	*ft_strcat(char *s1, const char *s2)
 {
 	char *ptr;

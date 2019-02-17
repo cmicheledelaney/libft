@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** prints the number given as arguments in decimal.
+*/
+
 void	ft_putnbr(int n)
 {
 	long	number;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** copies the string passed as argument without the leading and trailing
+** whitespaces and returns the new pointer.
+*/
+
 char	*ft_strtrim(char const *s)
 {
 	int		len;

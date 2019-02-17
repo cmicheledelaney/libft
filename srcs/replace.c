@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*
+** gets as parameters the address of a char pointer, a subbstring that needs to
+** get replaced and the string this substring needs to get replaced with.
+** replaces said substring. if the replacement is NULL, the to_replace string
+** gets deleted out of the string and it gets not replaced with anything.
+** if one of the other arguments are NULL the function returns.
+*/
+
 void	replace(char **string, char *to_replace, char *replacement)
 {
 	size_t	start;
@@ -20,7 +28,8 @@ void	replace(char **string, char *to_replace, char *replacement)
 	char	*hold;
 	char	*replaced;
 
-	if (ft_strstr(*string, to_replace) == NULL)
+	if (*string == NULL || to_replace == NULL ||
+		ft_strstr(*string, to_replace) == NULL)
 		return ;
 	length = ft_strlen(to_replace);
 	start = ft_strstr_index(*string, to_replace);

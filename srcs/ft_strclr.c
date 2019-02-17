@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** sets the memory pointed to by s to '\0'.
+*/
+
 void	ft_strclr(char *s)
 {
 	if (s == NULL)

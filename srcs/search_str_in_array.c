@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*
+** searches through each element of the array of strings and checks, if one
+** one those strings contains the string given as argument. The strings doesn't
+** need to be exactly the same in order to return a positive value. The string
+** passed needs to be at least a substrinng of one of the strings in the array.
+** returns the index of the string, otherwise -1.
+*/
+
 int	search_str_in_array(char **array, char *string)
 {
 	int	i;

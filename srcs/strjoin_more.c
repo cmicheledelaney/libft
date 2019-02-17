@@ -12,6 +12,12 @@
 
 #include "libftprintf.h"
 
+/*
+** takes a number of arguments (nbr_param), allocates the needed memoryspace
+** and joins the strings passed as arguments. returns a pointer to that
+** new memory address.
+*/
+
 char	*copying_str(char **strings, int length)
 {
 	int		i;

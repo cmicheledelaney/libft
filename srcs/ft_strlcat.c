@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** copies dstsize bytes of src to dst. be sure to allocate enough memory for
+** dst.
+*/
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	int		ret;

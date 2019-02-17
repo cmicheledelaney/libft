@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** if the given pointer is not pointing to NULL it frees the memory address
+** pointed to and sets the pointer to NULL.
+*/
+
 void	ft_memdel(void **ap)
 {
 	if (ap == NULL)

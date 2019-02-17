@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** joins the two passed strings and frees the string 'old'.
+*/
+
 char	*hold_and_free(char *old, char *addition)
 {
 	char *message;

@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+** accepts as parameter a character and returns the uppercase character of it.
+** if the given character is not a lowercase letter it just returns the
+** passed argument.
+*/
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

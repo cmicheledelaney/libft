@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** iterates through the array and returns i when it reaches the last element.
+*/
+
 size_t		size_array(char **array)
 {
 	int i;

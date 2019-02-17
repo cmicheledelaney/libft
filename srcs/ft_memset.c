@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** sets len bytes of the memory pointed to to the given value c.
+*/
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned long	i;

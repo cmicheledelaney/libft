@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+** reads until it reaches a newline or end of file.
+** the functions needs as parameters the fd it should read from and the address
+** of the char pointer 'line'.
+*/
+
 int	copy_line(char **line, char **str, int eol, int ret)
 {
 	int		j;

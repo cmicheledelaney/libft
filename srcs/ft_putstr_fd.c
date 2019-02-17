@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** writes the string to the given filedescriptor.
+*/
+
 void	ft_putstr_fd(char const *s, int fd)
 {
 	int i;

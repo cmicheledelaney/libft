@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** prints the number passed as argument in decimal to the given filedescriptor.
+*/
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	number;
