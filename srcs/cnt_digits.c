@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** counts how many places a number has in a given base. the decimal value 1000
+** converted in hex would return 3 (for '3e8').
+**/
+
 int		cnt_digits(long long i, char *base)
 {
 	int		cnt;

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** returns 1 if a character is an alphanumeric character, 0 otherwise.
+*/
+
 int	ft_isalnum(int c)
 {
 	return ((c <= '9' && c >= '0') || (('a' <= c && c <= 'z') ||

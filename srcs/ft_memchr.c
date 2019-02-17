@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** scans the initial n bytes of the memory pointed to by s for the first
+** instance of c and returns a pointer to that memory address.
+*/
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	while (n--)

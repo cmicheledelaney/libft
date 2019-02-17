@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** checks if a given character is a digit and returns 1 if it is, 0 otherwise.
+*/
+
 int	ft_isdigit(int c)
 {
 	return (c <= '9' && c >= '0');

@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/*
+** function  copies  no more than n bytes from memory area src to memory area
+** dest, stopping when the character c is found. Returns a pointer to that
+** address.
+*/
+
+
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	while (n--)

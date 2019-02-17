@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** sets n elements of the pointer to 0
+*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	int i;

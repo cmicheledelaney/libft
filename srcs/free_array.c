@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** frees each pointer in the array and the pointer to the array itself.
+*/
+
 void	free_array(char **array)
 {
 	int i;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** checks if the given int is pribtable. Returns 1 if it is printable, 0
+** otherwise.
+*/
+
 int		ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);

@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/*
+** gets the number that occurs in the given string. Only gets numbers that are
+** being led by whitespaces, a plus or a minus. Its stops reading as soon as
+** it hits the first non-digit character.
+** examples:
+** "-1223hello" returns -1223
+** "hello1234" returns 0
+** "+1234" returns 1234
+** "         -123hello" returns -123
+*/
+
 int	ft_atoi(const char *str)
 {
 	int			neg;

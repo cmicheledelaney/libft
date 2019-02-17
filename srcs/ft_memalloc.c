@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** allocates memoryspace of the given size and sets it to zero.
+*/
+
 void	*ft_memalloc(size_t size)
 {
 	size_t	i;

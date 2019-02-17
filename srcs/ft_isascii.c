@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** checks if a given character is an ascii character and returns 0 if it is, 0
+** otherwise.
+*/
+
 int	ft_isascii(int c)
 {
 	return (0 <= c && c <= 127);

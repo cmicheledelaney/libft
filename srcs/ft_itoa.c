@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** converts a given number into the string representation of it and returns
+** the string.
+*/
+
 char	*ft_itoa(int n)
 {
 	int		i;

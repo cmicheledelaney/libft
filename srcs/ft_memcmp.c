@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** Compares n bytes of the memory pointed to by s1 and s2. Returns an integer
+** less than, greater than or equals to 0.
+*/
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	if (n == 0)
