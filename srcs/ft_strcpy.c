@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** copies src to dst. be sure to allocate enough memory for dst!
+*/
+
 char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** copies dstsize bytes of src to dst. be sure to allocate enough memory for
+** appends dstsize bytes of src to dst. be sure to allocate enough memory for
 ** dst.
 */
 

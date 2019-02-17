@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** frees the memoryb pointed to by 'as' and sets it to NULL.
+*/
+
 void	ft_strdel(char **as)
 {
 	if (as == NULL)

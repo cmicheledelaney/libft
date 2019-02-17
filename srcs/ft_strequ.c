@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** checks if two strings are identical and returns 1 if they are, 0 otherwise.
+*/
+
 int	ft_strequ(char const *s1, char const *s2)
 {
 	int ret;
