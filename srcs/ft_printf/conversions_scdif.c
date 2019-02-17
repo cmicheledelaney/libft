@@ -59,9 +59,7 @@ void	f_string(va_list ap, t_flags flags)
 {
 	char	*str;
 	int		strlen;
-	int		check;
 
-	check = 0;
 	strlen = 0;
 	str = ft_strdup(va_arg(ap, char *));
 	(str != NULL) ? (strlen = ft_strlen(str)) : (0);

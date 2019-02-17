@@ -11,8 +11,11 @@
 # **************************************************************************** #
 
 NAME = libft.a
-
-SRCS =	./ft_memset.c \
+INCLUDES = includes libft/includes
+SRCS_PATH = srcs
+OBJS_PATH = objs
+SRCS =	$(addprefix $(SRCS_PATH)/, \
+		ft_memset.c \
 		./replace.c \
 		./size_array.c \
 		./ft_strlen_char.c \
@@ -92,7 +95,7 @@ SRCS =	./ft_memset.c \
 		./floats.c \
 		./casting.c \
 		./ft_printf.c \
-		./ft_strsplit_whitespace.c
+		./ft_strsplit_whitespace.c )
 
 OBJS = $(SRCS:.c=.o)
 

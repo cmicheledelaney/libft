@@ -29,12 +29,10 @@ void	print_loop(size_t cnt, char c)
 
 void	pr_putstr(char *str)
 {
-	unsigned long	i;
 	int				len;
 
 	len = 0;
 	(str != NULL) ? (len = ft_strlen(str)) : (0);
-	i = 0;
 	if (str == NULL)
 	{
 		pr_putstr("(null)");
