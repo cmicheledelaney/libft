@@ -42,7 +42,6 @@ int	get_next_line(const int fd, char **line)
 	int				ret;
 
 	eol = 0;
-	hold = NULL;
 	if (fd < 0 || read(fd, &buff, 0) < 0 || !line || fd >= FD_LIMIT)
 		return (-1);
 	while ((ret = read(fd, &buff, BUFF_SIZE)) > -1)
@@ -52,7 +51,7 @@ int	get_next_line(const int fd, char **line)
 		while (str[fd][eol] != '\n' && str[fd][eol] != '\0')
 			eol++;
 		if (str[fd][eol] == '\n' || (str[fd][0] != '\0' && ret != BUFF_SIZE))
-			return (copy_line(line, &str[fd], eol, ret));
+			return (copy_line(line, &str[fd], eol));
 		if (ret == 0)
 			return (0);
 	}
