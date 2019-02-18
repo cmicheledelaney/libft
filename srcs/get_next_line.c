@@ -18,7 +18,7 @@
 ** of the char pointer 'line'.
 */
 
-int	copy_line(char **line, char **str, int eol, int ret)
+int	copy_line(char **line, char **str, int eol)
 {
 	int		j;
 	char	*hold;
@@ -31,7 +31,6 @@ int	copy_line(char **line, char **str, int eol, int ret)
 	*str += (**str == '\n') ? (1) : (0);
 	*str = ft_strdup(*str);
 	free(hold);
-	ret += 0;
 	return (1);
 }
 
@@ -41,7 +40,6 @@ int	get_next_line(const int fd, char **line)
 	static char		*str[FD_LIMIT];
 	int				eol;
 	int				ret;
-	char			*hold;
 
 	eol = 0;
 	hold = NULL;
@@ -50,10 +48,7 @@ int	get_next_line(const int fd, char **line)
 	while ((ret = read(fd, &buff, BUFF_SIZE)) > -1)
 	{
 		buff[ret] = '\0';
-		str[fd] = ft_strjoin(str[fd], buff);
-		if (hold != NULL)
-			free(hold);
-		hold = str[fd];
+		str[fd] = hold_and_free(str[fd], buff);
 		while (str[fd][eol] != '\n' && str[fd][eol] != '\0')
 			eol++;
 		if (str[fd][eol] == '\n' || (str[fd][0] != '\0' && ret != BUFF_SIZE))

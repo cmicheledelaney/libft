@@ -48,7 +48,6 @@ char	*strjoin_more(int nbr_param, ...)
 
 	strings = (char **)malloc(sizeof(char *) * (nbr_param + 1));
 	strings[nbr_param] = NULL;
-	i = -1;
 	va_start(ap, nbr_param);
 	i = -1;
 	length = 0;
