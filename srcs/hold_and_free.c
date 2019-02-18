@@ -21,6 +21,6 @@ char	*hold_and_free(char *old, char *addition)
 	char *message;
 
 	message = ft_strjoin(old, addition);
-	free(old);
+	(old != NULL) ? (free(old)) : (0);
 	return (message);
 }

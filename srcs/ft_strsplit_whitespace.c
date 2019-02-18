@@ -70,6 +70,6 @@ char			**ft_strsplit_whitespace(char const *s)
 			array[i][k++] = s[j++];
 		array[i][k] = '\0';
 	}
-	array[i] = 0;
+	array[i] = NULL;
 	return (array);
 }

@@ -27,7 +27,7 @@ int	search_str_in_array(char **array, char *string)
 	i = -1;
 	while (array[++i] != NULL)
 	{
-		if (ft_strstr(array[i], string) != NULL)
+		if (ft_strstr_index(array[i], string) == 0)
 			return (i);
 	}
 	return (-1);
