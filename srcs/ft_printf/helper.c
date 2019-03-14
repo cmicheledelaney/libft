@@ -56,20 +56,3 @@ void	set_to_zero(t_flags *flags)
 	flags->value = 0;
 	flags->conversion = 0;
 }
-
-int		cnt_digits(long long i, char *base)
-{
-	int		cnt;
-	int		basenbr;
-
-	basenbr = 0;
-	while (base[basenbr])
-		basenbr++;
-	cnt = 0;
-	while (i != 0)
-	{
-		i = i / basenbr;
-		cnt++;
-	}
-	return (cnt);
-}
